@@ -4,7 +4,7 @@ require 'mina/git'
 require 'mina/rbenv'
 require 'mina/slack/tasks'
 
-set :repository, 'https://github.com/peatio/peatio.git'
+set :repository, 'https://github.com/bkkite/PeatioCryptoExchange.git'
 set :user, 'deploy'
 set :deploy_to, '/home/deploy/peatio'
 set :branch, 'master'

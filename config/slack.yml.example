@@ -3,7 +3,7 @@ staging: &defaults
     channel: '#peatio'
     username: minabot
   token: ~
-  hook_url: https://peatio.slack.com/services/hooks/incoming-webhook?token=
+  hook_url: https://bktrad.slack.com/services/hooks/incoming-webhook?token=
 
 production:
   <<: *defaults

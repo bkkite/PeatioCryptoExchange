@@ -694,7 +694,7 @@ cs:
         title: Důkaz aktiv
         intro: Ve směnárně, naše závazky jsou celkovým množství peněz (v kryptoměnách a Fiat měnách), které jsou našich uživatelů kterým děkujeme za důvěru. Na této stránce vám předkládáme naše závazky. Poskytujeme také vám způsob, jak ověřit, že zůstatek účtu je skutečně součástí našich závazků.
         how-to-verify: Jak ověřit je-li směnárna solventní?
-        how-to-verify-uri: https://peatio.com/documents/liability_proof
+        how-to-verify-uri: https://bktrad.com/documents/liability_proof
       liability_data:
         liability-proof-generating: Důkaz závazků se generuje, prosím vraťte se po 30 minutách.
         root-json: Root node
@@ -1248,7 +1248,7 @@ cs:
       trade: Odeslat a stornovat objednávky
     authorizations:
       new:
-        title: Peatio Applikace Autorizace
+        title: BKTrad Applikace Autorizace
         authorize_html: Autorizovat <strong class='text-info'>%{name}</strong> pro Váš účet?
         scopes: 'Tato aplikace je zde:'
         authorize: Autorizovat
@@ -1369,7 +1369,7 @@ cs:
       truncate: "..."
   mailer:
     dear_user: Vážený uživateli,
-    signature: Děkujeme,<br/>Peatio Team
+    signature: Děkujeme,<br/>bktrad Team
     please_contact: Pokud to nejste vy, prosím <a href='mailto:%{contact_mail}'>kontaktujte nás</a> NEPRODLENĚ.
     footer: Toto je automaticky generovaný email, prosím neodpovídejte, pokud máte nějaký dotaz, prosím <a href="mailto:%{contact_mail}">kontaktujte nás</a>.
   comment_mailer:
@@ -1459,9 +1459,9 @@ cs:
   gon:
     ask: Poptávka
     bid: Nabídka
-    brand: Peatio Exchange
+    brand: BKTrad Exchange
     notification:
-      title: Peatio Exchange
+      title: BKTrad Exchange
       enabled: Notifikace aktivní
       new_trade: "%{kind} objednávka#%{id} zpracována %{price} %{quote_unit} objem %{volume} %{base_unit}。"
   back: Zpět
@@ -1666,9 +1666,9 @@ cs:
     application:
       close: Zavřít
     meta:
-      page_title: Peatio - The Opensource Cryptocurrency Exchange
-      page_description: Peatio - The Opensource Cryptocurrency Exchange
-      page_keywords: Peatio,Opensource,Exchange,Cryptocurrency
+      page_title: BKTrad - The Opensource Cryptocurrency Exchange
+      page_description: BKTrad - The Opensource Cryptocurrency Exchange
+      page_keywords: BKTrad,Opensource,Exchange,Cryptocurrency
   members:
     edit:
       name: Vyplňte prosím aplikaci.
