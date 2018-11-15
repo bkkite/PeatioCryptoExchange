@@ -11,34 +11,34 @@ Peatio files that need to be updated when a new coin is added:
 
 
 `peatio/current/config/`
-* currencies.yml
-* deposit_channels.yml
-* markets.yml
-* withdraw_channels.yml
+* currencies.yml														*OK
+* deposit_channels.yml													*OK
+* markets.yml															*OK
+* withdraw_channels.yml													*OK
 
-peatio/current/app/controllers/
-* admin/deposits/{coin}s_controller.rb
-* admin/withdraws/{coin}s_controller.rb
-* private/assets_controller.rb // add into `def index`
-* private/deposits/{coin}s_controller.rb
-* private/withdraws/{coin}s_controller.rb
+peatio/current/app/controllers/											*OK
+* admin/deposits/{coin}s_controller.rb									*OK
+* admin/withdraws/{coin}s_controller.rb									*OK
+* private/assets_controller.rb // add into `def index`					??
+* private/deposits/{coin}s_controller.rb								*OK
+* private/withdraws/{coin}s_controller.rb								*OK
 
 peatio/current/app/models/
-* admin/ability.rb // add to `def initialize(user)`
-* deposits/{coin}.rb
-* withdraws/{coin}.rb
+* admin/ability.rb // add to `def initialize(user)`						*OK
+* deposits/{coin}.rb													*OK
+* withdraws/{coin}.rb													*OK
 
 peatio/current/app/views/
-* admin/deposits/{coin}s/index.html.slim
-* admin/withdraws/{coin}s/_table.html.slim
-* admin/withdraws/{coin}s/index.html.slim
-* admin/withdraws/{coin}s/show.html.slim
-* private/assets/\_{cur\_code}\_assets.html.slim
-* app/views/private/assets/\_liability\_tabs.html.slim // add to `.ul.nav.nav-tabs` and `.tab-content`
-* app/views/private/assets/index.html.slim // add to `ul.nav.nav-justified.asssets-nav` and `content_for`
-* private/deposits/{coin}s/new.html.slim
-* private/withdraws/{coin}s/new.html.slim // include `edit.html.slim` in the directory, but no changes needed to that file
-* 
+* admin/deposits/{coin}s/index.html.slim								*OK
+* admin/withdraws/{coin}s/_table.html.slim								*OK
+* admin/withdraws/{coin}s/index.html.slim								*OK
+* admin/withdraws/{coin}s/show.html.slim								*OK
+* private/assets/\_{cur\_code}\_assets.html.slim						*ok
+* app/views/private/assets/\_liability\_tabs.html.slim // add to `.ul.nav.nav-tabs` and `.tab-content` 		*OK
+* app/views/private/assets/index.html.slim // add to `ul.nav.nav-justified.asssets-nav` and `content_for` 	*OK
+* private/deposits/{coin}s/new.html.slim																	??
+* private/withdraws/{coin}s/new.html.slim // include `edit.html.slim` in the directory, but no changes needed to that file *OK
+*
 
 peatio/current/config/locales/
 * en.yml
@@ -53,7 +53,7 @@ peatio/current/config/locales/
 
 
 #### Other
-If you are changing base currency from CNY to another base fiat currency (e.g. USD): 
+If you are changing base currency from CNY to another base fiat currency (e.g. USD):
 
 * app/controllers/admin/currency_deposits_controller.rb
 * config/locales/banks/en.yml

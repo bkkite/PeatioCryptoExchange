@@ -1,5 +1,5 @@
 module Withdraws
-  class Ether < ::Withdraw
+  class Roto2 < ::Withdraw
     include ::AasmAbsolutely
     include ::Withdraws::Coinable
     include ::FundSourceable

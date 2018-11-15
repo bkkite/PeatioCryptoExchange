@@ -1,4 +1,4 @@
-= simple_form_for @withdraw, as: :withdraw, scope: :ether do |f|
+= simple_form_for @withdraw, as: :withdraw, scope: :roto2 do |f|
 
   = f.input :fund_source,
     label: t('.fund_source_label'),
@@ -38,6 +38,6 @@
   javascript:
     $(function() {
       $('button#withdraw_all_btn').on('click', function() {
-        $('input#withdraw_sum').val($('.withdraw_ether_account_balance span').text());
+        $('input#withdraw_sum').val($('.withdraw_roto2_account_balance span').text());
       });
     });

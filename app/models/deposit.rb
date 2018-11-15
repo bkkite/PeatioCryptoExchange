@@ -121,17 +121,17 @@ class Deposit < ActiveRecord::Base
   end
 
   def aggregate_funds
-      if c.code.upcase == 'ETH'
+      if c.code.upcase == 'ROTO2'
         payment_tx = PaymentTransaction::Normal.where(txid: txid).first
         local_nonce = 0
         local_nonce = CoinRPC[channel.currency_obj.code].parity_nextNonce(payment_tx.address).to_i(16)
         gas_limit = channel.currency_obj.gas_limit
         gas_price = channel.currency_obj.gas_price
         local_amount = ((amount - 0.000000001) * 1e18).to_i - (gas_price * gas_limit)
-        agg_txid = CoinRPC[channel.currency_obj.code].eth_sendTransaction(from: payment_tx.address, to: channel.currency_obj.base_account, gas: "0x" + gas_limit.to_s(16), gasPrice: "0x" + gas_price.to_s(16), nonce: "0x" + local_nonce.to_s(16), value: "0x" + local_amount.to_s(16)) 
+        agg_txid = CoinRPC[channel.currency_obj.code].roto2_sendTransaction(from: payment_tx.address, to: channel.currency_obj.base_account, gas: "0x" + gas_limit.to_s(16), gasPrice: "0x" + gas_price.to_s(16), nonce: "0x" + local_nonce.to_s(16), value: "0x" + local_amount.to_s(16))
       end
   end
-  
+
   def set_fee
     amount, fee = calc_fee
     self.amount = amount

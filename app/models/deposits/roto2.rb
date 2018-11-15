@@ -1,5 +1,5 @@
 module Deposits
-  class Ether < ::Deposit
+  class Roto2 < ::Deposit
     include ::AasmAbsolutely
     include ::Deposits::Coinable
 

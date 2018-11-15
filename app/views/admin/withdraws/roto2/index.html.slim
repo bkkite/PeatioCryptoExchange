@@ -1,0 +1,11 @@
+- unless @one_roto2.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {roto2: @one_roto2}
+- unless @all_roto2.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {roto2: @all_roto2}
+
+- if @all_roto2.empty? and @one_roto2.empty?
+  h3.text-info.text-center = t('.empty')

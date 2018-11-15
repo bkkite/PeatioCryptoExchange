@@ -8,7 +8,7 @@ module Worker
       return if payment_address.address.present?
 
       currency = payload[:currency]
-      if currency == 'eth'
+      if currency == 'roto2'
         address  = CoinRPC[currency].personal_newAccount("")
       else
         address  = CoinRPC[currency].getnewaddress("payment")

@@ -55,7 +55,7 @@ class CoinRPC
     end
   end
 
-  class ETH < self
+  class Roto2 < self
     def handle(name, *args)
       post_body = {"jsonrpc" => "2.0", 'method' => name, 'params' => args, 'id' => '1' }.to_json
       resp = JSON.parse( http_post_request(post_body) )

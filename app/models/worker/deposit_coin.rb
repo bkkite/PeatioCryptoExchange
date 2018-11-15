@@ -10,10 +10,10 @@ module Worker
       txid = payload[:txid]
 
       channel = DepositChannel.find_by_key(channel_key)
-      if channel.currency_obj.code == 'eth'
-        raw  = get_raw_eth txid
+      if channel.currency_obj.code == 'roto2'
+        raw  = get_raw_roto2 txid
         raw.symbolize_keys!
-        deposit_eth!(channel, txid, 1, raw)
+        deposit_roto2!(channel, txid, 1, raw)
       else
         raw  = get_raw channel, txid
         raw[:details].each_with_index do |detail, i|
@@ -23,14 +23,14 @@ module Worker
       end
     end
 
-    def deposit_eth!(channel, txid, txout, raw)
+    def deposit_roto2!(channel, txid, txout, raw)
       ActiveRecord::Base.transaction do
         unless PaymentAddress.where(currency: channel.currency_obj.id, address: raw[:to]).first
           Rails.logger.info "Deposit address not found, skip. txid: #{txid}, txout: #{txout}, address: #{raw[:to]}, amount: #{raw[:value].to_i(16) / 1e18}"
           return
         end
         return if PaymentTransaction::Normal.where(txid: txid, txout: txout).first
-        confirmations = CoinRPC["eth"].eth_blockNumber.to_i(16) - raw[:blockNumber].to_i(16)
+        confirmations = CoinRPC["roto2"].roto2_blockNumber.to_i(16) - raw[:blockNumber].to_i(16)
         tx = PaymentTransaction::Normal.create! \
         txid: txid,
         txout: txout,
@@ -51,7 +51,7 @@ module Worker
         confirmations: tx.confirmations
 
         deposit.submit!
-        deposit.accept! 
+        deposit.accept!
       end
     rescue
       Rails.logger.error "Failed to deposit: #{$!}"
@@ -102,7 +102,7 @@ module Worker
     end
 
     def get_raw_eth(txid)
-      CoinRPC["eth"].eth_getTransactionByHash(txid)
+      CoinRPC["roto2"].roto2_getTransactionByHash(txid)
     end
   end
 end

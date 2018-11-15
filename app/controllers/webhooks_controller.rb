@@ -7,9 +7,9 @@ class WebhooksController < ApplicationController
 			render :json => { :status => "queued" }
 		end
 	end
-	def eth
+	def roto2
 		if params[:type] == "transaction" && params[:hash].present?
-			AMQPQueue.enqueue(:deposit_coin, txid: params[:hash], channel_key: "ether")
+			AMQPQueue.enqueue(:deposit_coin, txid: params[:hash], channel_key: "roto2")
 			render :json => { :status => "queued" }
 		end
 	end

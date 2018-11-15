@@ -1,17 +1,4 @@
 - id: 1
-  key: renminbi
-  code: cny
-  symbol: "¥"
-  coin: false
-  precision: 2
-  assets:
-    accounts:
-      -
-        bank: '招商银行'
-        address: '6225 0885 6022 3501'
-        password: '111111'
-        tel: '95555'
-- id: 2
   key: satoshi
   code: btc
   symbol: "฿"
@@ -25,19 +12,18 @@
     accounts:
       -
         address: 1HjfnJpQmANtuW7yr1ggeDfyfe1kDK7rm3
-- id: 3
-  key: ether
-  code: eth
-  symbol: "฿"
+
+- id: 2
+  key: roto2
+  code: roto2
+  symbol: "R"
   coin: true
-  main_address: YOUR_BASE_ADDRESS
-  family: ETH
-  precision: 4
+  family: Roto2
   quick_withdraw_max: 0
-  rpc: http://Your_eth_server_ip
-  blockchain: https://etherscan.io/tx/#{txid}
-  address_url: https://etherscan.io/address/#{address}
+  rpc: http://Your_roto_server_ip
+  blockchain: https://roto2coin.io/.io/tx/#{txid}
+  address_url: https://roto2coin.io/address/#{address}
   assets:
     accounts:
       -
-        address: 0x4bA2474e063Aec44e23F2Bf7Fb9e4e2878dBaB44
+        address: Rto2TJYEi2K9ftCRxESpiabbPPz9f3Q6tMsKCkzzL1mNdyStaRJ9RES4nQ8QtjXiGbBzhvCgjQvECfbVMg8mxuKj5jhYrRbVp9

@@ -42,6 +42,7 @@ en:
       currency_name:
         cny: CNY
         btc: BTC
+        roto2: Roto2
       deposit_cny:
         title: Chinese Yuan Deposit
         desc: "To deposit via Bank transfer, please follow these steps:"
@@ -169,4 +170,4 @@ en:
         all: All Market
         cny: CNY Market
         btc: BTC Market
-
+        roto2: Roto2 Market    
