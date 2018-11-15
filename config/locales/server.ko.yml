@@ -1363,7 +1363,7 @@ ko:
       sms_auth_activated: 핸드폰SMS인증이 완료되었습니다.
     sms_auth_deactivated:
       subject: "[BKTrad] 핸드폰SMS인증을 재설정"
-      sms_auth_deactiva
+      sms_auth_deactiva: 핸드폰SMS인증이 완료되었습니다.
       ted: 핸드폰SMS인증이 완료되었습니다.
     reset_password_done:
       subject: "[BKTrad] 비밀번호 수정 완료"
