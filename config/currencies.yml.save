@@ -1,0 +1,29 @@
+- id: 1
+  key: satoshi
+  code: btc
+  symbol: "฿"
+  coin: true
+  family: BTC
+  quick_withdraw_max: 0
+  rpc: http://bktrad:@127.0.0.1:18332
+  blockchain: https://blockchain.info/tx/#{txid}
+  address_url: https://blockchain.info/address/#{address}
+  assets:
+    accounts:
+      -
+        address: mgjbXLU6myFGBYT3QS9ZKhD5semNwvgkb1
+
+- id: 2
+  key: roto2
+  code: roto2
+  symbol: "R"
+  coin: true
+  family: Roto2
+  quick_withdraw_max: 0
+  rpc: http://Your_roto_server_ip
+  blockchain: https://roto2coin.io/.io/tx/#{txid}
+  address_url: https://roto2coin.io/address/#{address}
+  assets:
+    accounts:
+      -
+        address: Rto2TJYEi2K9ftCRxESpiabbPPz9f3Q6tMsKCkzzL1mNdyStaRJ9RES4nQ8QtjXiGbBzhvCgjQvECfbVMg8mxuKj5jhYrRbVp9
