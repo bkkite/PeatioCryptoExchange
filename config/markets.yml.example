@@ -4,7 +4,7 @@
   base_unit: roto2
   quote_unit: btc
   #price_group_fixed: 1 # aggregate price levels in orderbook
-  bid: {fee: 0, currency: btc, fixed: 4}
-  ask: {fee: 0, currency: roto2, fixed: 4}
+  bid: {fee: 0.00025, currency: btc, fixed: 8}
+  ask: {fee: 0.5, currency: roto2, fixed: 2}
   sort_order: 1
   #visible: false     # default to true
