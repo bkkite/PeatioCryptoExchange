@@ -40,10 +40,10 @@ en:
       deposit: Deposit
       withdraw: Withdraw
       currency_name:
-        cny: EUR
+        eur: EUR
         btc: BTC
         roto2: Roto2
-      deposit_cny:
+      deposit_eur:
         title: Chinese Yuan Deposit
         desc: "To deposit via Bank transfer, please follow these steps:"
         desc_item_1: "1. Submit the form to get the identification code."
@@ -99,7 +99,7 @@ en:
         warning: Warning
         suspect: Suspect
 
-      withdraw_cny:
+      withdraw_eur:
         title: Chinese Yuan Withdraw
         intro: Select the bank to cash withdrawal amount and enter the account number and complete submission.
         intro_2: Your bank account and name must be consistent with the real-name authentication name.
@@ -168,6 +168,6 @@ en:
     markets:
       market_list:
         all: All Market
-        cny: EUR Market
+        eur: EUR Market
         btc: BTC Market
         roto2: Roto2 Market    
