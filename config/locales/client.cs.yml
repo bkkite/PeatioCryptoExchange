@@ -11,7 +11,7 @@ cs:
       deposit: Vklad
       withdraw: Výběr
       currency_name:
-        cny: CNY
+        cny: EUR
         btc: BTC
       deposit_cny:
         title: Vložit Čínský Yuan

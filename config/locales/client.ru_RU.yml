@@ -11,7 +11,7 @@ ru_RU:
       deposit: Пополнить
       withdraw: Вывести
       currency_name:
-        cny: CNY
+        cny: EUR
         btc: BTC
       deposit_cny:
         title: Пополнить в китайских юанях
@@ -120,5 +120,5 @@ ru_RU:
     markets:
       market_list:
         all: Все рынки
-        cny: Рынок CNY
+        cny: Рынок EUR
         btc: Рынок BTC

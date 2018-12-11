@@ -11,7 +11,7 @@ it:
       deposit: Deposita
       withdraw: Preleva
       currency_name:
-        cny: CNY
+        cny: EUR
         btc: BTC
       deposit_cny:
         title: Deposito in Yuan Cinesi

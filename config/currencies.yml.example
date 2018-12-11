@@ -1,4 +1,18 @@
 - id: 1
+  key: euro
+  code: eur
+  symbol: "€"
+  coin: false
+  precision: 2
+  assets:
+    accounts:
+      -
+        bank: 'Bank'
+        address: '6225 6225 08 8560223501'
+        password: '111111'
+        tel: '95555'
+
+- id: 2
   key: satoshi
   code: btc
   symbol: "฿"
@@ -13,7 +27,7 @@
       -
         address: mgjbXLU6myFGBYT3QS9ZKhD5semNwvgkb1
 
-- id: 2
+- id: 3
   key: roto2
   code: roto2
   symbol: "R"

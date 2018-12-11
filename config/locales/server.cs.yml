@@ -294,7 +294,7 @@ cs:
   market:
     currency:
       btc: BTC
-      cny: CNY
+      cny: EUR
       doge: DOGE
       pts: PTS
       ltc: LTC
@@ -309,10 +309,10 @@ cs:
       code: BTSX
       name: BitsharesX
       format: '0,0.0000'
-    renminbi:
-      key: CNY
-      code: CNY
-      name: Čínský Yuan
+    euro:
+      key: EUR
+      code: EUR
+      name: Euro
       format: '0,0.00'
     dogecoin:
       key: DOG
@@ -684,12 +684,12 @@ cs:
       index:
         liability-proof: Důkaz závazků
         btc-assets: BTC Aktiva
-        cny-assets: CNY Aktiva
+        cny-assets: EUR Aktiva
       liability_tabs:
         verify-btc: Ověřit moje BTC Aktiva
-        verify-cny: Ověřit moje CNY Aktiva
+        verify-cny: Ověřit moje EUR Aktiva
         btc-assets-total: 'BTC aktiva ve směnárně: '
-        cny-assets-total: 'CNY aktiva ve směnárně:'
+        cny-assets-total: 'EUR aktiva ve směnárně:'
       liability_proof:
         title: Důkaz aktiv
         intro: Ve směnárně, naše závazky jsou celkovým množství peněz (v kryptoměnách a Fiat měnách), které jsou našich uživatelů kterým děkujeme za důvěru. Na této stránce vám předkládáme naše závazky. Poskytujeme také vám způsob, jak ověřit, že zůstatek účtu je skutečně součástí našich závazků.
@@ -708,9 +708,9 @@ cs:
         total: Všechna BTC aktiva
         address: Adresa
       cny_assets:
-        title: CNY aktiva
-        intro: Všechny CNY aktiva ze směnárny jsou zde.
-        total: Všechna CNY aktiva
+        title: EUR aktiva
+        intro: Všechny EUR aktiva ze směnárny jsou zde.
+        total: Všechna EUR aktiva
         description: " <p>Pro dohled, můžete podat dotaz na bilance našeho vkladového účtu:</p> <p>Banka: %{bank}</p> <p>Účet： %{address}</p> <p>Heslo： %{password}</p> <p>Tel.： %{tel}</p>"
       partial_tree:
         success: 'Uspěšné! Verifikační data generovány: %{timestamp}'
@@ -1322,7 +1322,7 @@ cs:
       wait: Čeká
       cancel: Storno
     currency:
-      cny: CNY
+      cny: EUR
       btc: BTC
     order:
       state:

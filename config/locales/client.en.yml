@@ -40,7 +40,7 @@ en:
       deposit: Deposit
       withdraw: Withdraw
       currency_name:
-        cny: CNY
+        cny: EUR
         btc: BTC
         roto2: Roto2
       deposit_cny:
@@ -168,6 +168,6 @@ en:
     markets:
       market_list:
         all: All Market
-        cny: CNY Market
+        cny: EUR Market
         btc: BTC Market
         roto2: Roto2 Market    
